@@ -1,37 +1,28 @@
-Backend - Gerenciador de Contatos
+# Backend - Gerenciador de Contatos
 
-Este é o backend do sistema de gerenciamento de contatos, desenvolvido com NestJS e MongoDB. Ele fornece APIs para cadastrar, editar, listar e excluir contatos, além de validar se um número de telefone já foi cadastrado.
+Este é o backend do sistema de gerenciamento de contatos, desenvolvido com **NestJS** e **MongoDB**. Ele fornece APIs para cadastrar, editar, listar e excluir contatos, além de validar se um número de telefone já foi cadastrado.
 
-📌 Tecnologias Utilizadas
+## 📌 Tecnologias Utilizadas
 
-NestJS - Framework backend
+- **NestJS** - Framework backend
+- **TypeScript** - Linguagem de desenvolvimento
+- **MongoDB** - Banco de dados NoSQL
+- **Mongoose** - ODM para MongoDB
+- **Swagger** - Documentação da API
+- **Jest** - Testes automatizados
 
-TypeScript - Linguagem de desenvolvimento
+## 🚀 Funcionalidades
 
-MongoDB - Banco de dados NoSQL
+- 📋 Listagem de contatos
+- ➕ Criação de novos contatos
+- ✏️ Edição de contatos existentes
+- ❌ Exclusão de contatos
+- 🔍 Validação de e-mail e telefone
+- ⚡ Verificação assíncrona para evitar números de telefone duplicados
 
-Mongoose - ODM para MongoDB
+## 📂 Estrutura do Projeto
 
-Swagger - Documentação da API
-
-Jest - Testes automatizados
-
-🚀 Funcionalidades
-
-📋 Listagem de contatos
-
-➕ Criação de novos contatos
-
-✏️ Edição de contatos existentes
-
-❌ Exclusão de contatos
-
-🔍 Validação de e-mail e telefone
-
-⚡ Verificação assíncrona para evitar números de telefone duplicados
-
-📂 Estrutura do Projeto
-
+```
 backend/
 │-- src/
 │   ├── modules/
@@ -51,45 +42,38 @@ backend/
 │   │   ├── environment.ts
 │   ├── tests/
 │   │   ├── contacts.e2e-spec.ts
+```
 
-⚙️ Como Executar o Projeto
+## ⚙️ Como Executar o Projeto
 
-1️⃣ Instalar Dependências
+### 1️⃣ Instalar Dependências
 
+```sh
 npm install
+```
 
-2️⃣ Configurar Variáveis de Ambiente
 
-Crie um arquivo .env na raiz do projeto e configure os seguintes valores:
+### 2️⃣ Executar o Servidor
 
-MONGO_URI=mongodb://localhost:27017/contacts_db
-PORT=3000
-
-3️⃣ Executar o Servidor
-
+```sh
 npm run start:dev
+```
 
-A API estará disponível em: http://localhost:3000
+A API estará disponível em: [http://localhost:3000](http://localhost:3000)
 
-📖 Documentação da API
 
-A documentação da API pode ser acessada via Swagger em:
+## 🔗 Conexão com o Frontend
 
-http://localhost:3000/api
+O frontend deve estar configurado para consumir a API no endpoint `http://localhost:3000/api`. Se necessário, ajuste as configurações no arquivo `environment.ts` do frontend.
 
-🔗 Conexão com o Frontend
+## ✨ Melhorias Futuras
 
-O frontend deve estar configurado para consumir a API no endpoint http://localhost:3000/api. Se necessário, ajuste as configurações no arquivo environment.ts do frontend.
+- 🔑 Autenticação de usuários
+- 📊 Dashboard com estatísticas
+- 📆 Integração com calendário
+- 🔄 Paginação na listagem de contatos
 
-✨ Melhorias Futuras
+---
 
-🔑 Autenticação de usuários
-
-📊 Dashboard com estatísticas
-
-📆 Integração com calendário
-
-🔄 Paginação na listagem de contatos
-
-Desenvolvido com 💙 por Fabio Francisco da Silva
+Desenvolvido com 💙 por [Seu Nome]
 
